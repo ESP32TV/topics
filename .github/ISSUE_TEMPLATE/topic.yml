@@ -1,0 +1,69 @@
+name: ESP32 topic suggestion
+description: Propose a topic for an ESP32TV episode. Reviewed against the topic policy.
+labels: ["triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Make the issue title your topic. One specific line beats a category —
+        "ESP32-C6 Matter commissioning, end to end" clears the bar, "networking stuff" does not.
+
+        Accepted topics become episodes, so describing what you need to see makes the episode answer
+        your actual question. Full policy: [README](../blob/main/README.md#topic-policy).
+
+  - type: textarea
+    id: coverage
+    attributes:
+      label: What should the episode cover?
+      description: Two to six concrete points. Becomes the episode outline if the topic is approved.
+      placeholder: |
+        - Commission a C6 into Thread from the ESP-IDF CLI, no vendor app
+        - Border router on a second board, and what breaks when it dies
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does this matter to ESP32 developers?
+      description: Optional. Who runs into this, and what is missing or misleading in what already exists.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Where does it sit in the stack?
+      options:
+        - Toolchain and build (ESP-IDF, PlatformIO, flashing, CI)
+        - Protocols and networking (Wi-Fi, BLE, Thread, Matter, MQTT, ESP-NOW)
+        - AI and edge inference (TFLite, LLMs, vision, voice)
+        - Peripherals and drivers (I2C, SPI, USB, ADC, sensors)
+        - Low power and reliability (sleep, OTA, provisioning, watchdog)
+        - Ecosystem and tooling around ESP32 (clients, dashboards, integrations)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Optional. Links are checked — a broken link delays review, one that contradicts the topic gets it declined as unsupported.
+      placeholder: |
+        https://docs.espressif.com/...
+        https://github.com/...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: confirmations
+    attributes:
+      label: Before you submit
+      description: Not a duplicate · about ESP32 development · listed references resolve · no promotional or support traffic.
+      options:
+        - Yes — all of these hold
+        - No — one does not, see the description above
+      default: 0
+    validations:
+      required: true

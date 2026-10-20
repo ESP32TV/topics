@@ -5,10 +5,12 @@ The public topic backlog of ESP32TV, the only ESP32-only media platform. Every i
 ## How to suggest a topic
 
 1. **Search first** — check the open and closed issues. If your topic is already there, comment on it instead of opening a duplicate.
-2. Open a new issue with:
-   - **A specific title** — e.g. "ESP32 Bluetooth Mesh in practice", not "networking stuff"
-   - **A short description** — what the episode should cover and why it matters to the ESP32 community
-   - **References** (optional but appreciated) — links to docs, repos, or articles that support the topic
+2. **Open a topic suggestion** — blank issues are disabled, so every issue starts from the form. The title is your topic; the form asks for:
+   - **The topic as the title** — one specific line, e.g. "ESP32 Bluetooth Mesh in practice", not "networking stuff"
+   - **What the episode should cover** (required) — two to six concrete points. If the topic is accepted, this becomes the episode outline
+   - **Where it sits in the stack** (required) — toolchain, protocols, AI and edge inference, peripherals, low power, ecosystem, or other
+   - **Why it matters** (optional) — who runs into the problem, and what existing material is missing or misleading
+   - **References** (optional) — links to docs, repos, or articles that support the topic. They are checked
 
 ## Topic policy
 
