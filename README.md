@@ -33,6 +33,8 @@ Topics are reviewed by the ESP32TV team. To be accepted, a suggestion should:
 | `rejected` | Declined — the issue is closed with a comment explaining why |
 | `duplicated` | Already requested — the issue links to the original |
 
+> **Want it sooner?** Comment on the issue, or add a reaction to it, instead of opening a duplicate. Interest on an existing topic is what we count when ordering the backlog — a duplicate is closed pointing at the original, a comment moves it up.
+
 Rejected topics are **not** a judgment of your idea — the roadmap is curated to keep the show focused. The comment on the issue explains which part of the policy the suggestion didn't meet.
 
 ## License
