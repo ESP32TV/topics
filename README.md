@@ -5,12 +5,21 @@ The public topic backlog of ESP32TV, the only ESP32-only media platform. Every i
 ## How to suggest a topic
 
 1. **Search first** — check the open and closed issues. If your topic is already there, comment on it instead of opening a duplicate.
-2. **Open a topic suggestion** — blank issues are disabled, so every issue starts from the form. The title is your topic; the form asks for:
-   - **The topic as the title** — one specific line, e.g. "ESP32 Bluetooth Mesh in practice", not "networking stuff"
+2. **Pick the form that matches the show.** Blank issues are disabled, so every issue starts from one of two forms. The title is your topic; one specific line beats a category — "ESP32 Bluetooth Mesh in practice" clears the bar, "networking stuff" does not.
+
+   **Learning series — topic suggestion.** For a topic that teaches something about ESP32 development. Asks for:
    - **What the episode should cover** (required) — two to six concrete points. If the topic is accepted, this becomes the episode outline
    - **Where it sits in the stack** (required) — pick the one layer that fits best: toolchain and build, protocols and networking, firmware architecture and RTOS, debugging and diagnosis, configuration and storage, peripherals and drivers, low power and OTA, AI-assisted development, AI and edge inference, security, ecosystem and tooling, or other
    - **Why it matters** (optional) — who runs into the problem, and what existing material is missing or misleading
    - **References** (optional) — links to docs, repos, or articles that support the topic. They are checked
+
+   **Other shows — topic suggestion.** For Insider, Tech Review, Project Review, ESP32 Youth or News. Asks for:
+   - **Which show** (required) — the team confirms or changes it at triage
+   - **What it is about** (required) — the project and its repository, the partner and product, the chip or feature, the event or release, with a link where one exists, then the two to six concrete points the episode should cover
+   - **Why now** (optional) — a release, a change, a gap, or for a news item what happened and when
+   - **References** (optional) — checked
+
+   Both forms end with the same four confirmations, and neither can be submitted with a blank one.
 
 ## Topic policy
 
@@ -22,9 +31,11 @@ Topics are reviewed by the ESP32TV team. To be accepted, a suggestion should:
 - **Not be a duplicate** — search before submitting; duplicates are closed pointing at the original.
 - **Be respectful and spam-free** — promotional or abusive submissions are closed immediately.
 
+Those bullets are written for Learning topic suggestions. A suggestion for another show is held to the same specificity, references, duplication and conduct, with one difference: it does not have to teach a development skill, it has to be about something that exists, can be shown on camera, and can be checked from public material.
+
 ### The stack layer, and how it relates to tags
 
-The form asks where your topic sits in the stack. That answer is how a topic is routed and counted, not how it is
+The Learning form asks where your topic sits in the stack. That answer is how a topic is routed and counted, not how it is
 filed: the library index uses its own subject tags, assigned by the team at triage, and one topic can carry several
 of them. Pick the layer that fits best — a topic that spans two is not a problem.
 
@@ -60,6 +71,8 @@ list rather than for this page. Pick the layer that fits best: a topic that span
 | `duplicated` | Already requested — the issue links to the original |
 
 > **Want it sooner?** Comment on the issue, or add a reaction to it, instead of opening a duplicate. Interest on an existing topic is what we count when ordering the backlog — a duplicate is closed pointing at the original, a comment moves it up.
+
+> **Labels.** Every issue arrives labelled `triage`. A Learning suggestion also carries `series: learning`; for the other shows the team applies the matching `series:` label at triage. Subject tags are a Learning-only vocabulary — they feed the library's sidebar and its search — so a Project Review or a News issue is never given them.
 
 Rejected topics are **not** a judgment of your idea — the roadmap is curated to keep the show focused. The comment on the issue explains which part of the policy the suggestion didn't meet.
 

@@ -1,6 +1,6 @@
-name: ESP32 topic suggestion
-description: Propose a topic for an ESP32TV episode. Reviewed against the topic policy.
-labels: ["triage"]
+name: Learning series — topic suggestion
+description: Propose a topic for an ESP32TV Learning episode. Reviewed against the topic policy.
+labels: ["triage", "series: learning"]
 body:
   - type: markdown
     attributes:
@@ -10,6 +10,9 @@ body:
 
         Accepted topics become episodes, so describing what you need to see makes the episode answer
         your actual question. Full policy: [README](https://github.com/ESP32TV/topics/blob/main/README.md#topic-policy).
+
+        This form is for the **Learning** series only. For Insider, Tech Review, Project Review,
+        ESP32 Youth or News, use the other form.
 
   - type: textarea
     id: coverage

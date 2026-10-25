@@ -1,0 +1,78 @@
+name: Other shows — topic suggestion
+description: Propose a topic for an ESP32TV show other than Learning. Reviewed against the topic policy.
+labels: ["triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Make the issue title your topic. One specific line beats a category —
+        "A low-cost Thread border router built on a C6" clears the bar, "smart home stuff" does not.
+
+        This form is for every show except Learning. For a Learning episode idea — a topic that teaches
+        something about ESP32 development — use the Learning form instead, which asks where the topic sits
+        in the stack. Full policy:
+        [README](https://github.com/ESP32TV/topics/blob/main/README.md#topic-policy).
+
+  - type: dropdown
+    id: show
+    attributes:
+      label: Which show is this for?
+      description: The team confirms or changes this at triage. Pick the closest one if you are unsure.
+      options:
+        - Insider (interviews with Espressif engineers)
+        - Tech Review (partner technologies and integrations)
+        - Project Review (community and commercial projects)
+        - ESP32 Youth (student and university projects)
+        - News (ecosystem roundup and updates as they happen)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: subject
+    attributes:
+      label: What is it about?
+      description: |-
+        Name the thing the episode would be about and point at where it can be checked — a project and
+        its repository link, a partner and product, a chip or feature, an event or release — then the two
+        to six concrete points the episode should cover. Becomes the episode outline if it is approved.
+      placeholder: |-
+        Project: esp32-thread-border-router — https://github.com/...
+        Community project, MIT licence, published schematics.
+        - What it does, and what it costs to build
+        - The one design decision worth explaining
+        - What did not work, and how it was found
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why now?
+      description: Optional. Why this is worth an episode at this point — a release, a change, a gap in what exists. For a news item, what happened and when.
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Optional. Links are checked — a broken link delays review, one that contradicts the topic gets it declined as unsupported.
+      placeholder: |-
+        https://docs.espressif.com/...
+        https://github.com/...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before you submit
+      description: All four must hold. Reviewers check them at triage, and a "no" at triage is what gets a topic declined.
+      options:
+        - label: I searched open and closed issues — this topic is not already requested.
+        - label: This relates to the ESP32 ecosystem, and it is not a request for direct technical support.
+        - label: Every link in References resolves.
+        - label: Nothing here is private or under NDA — for a project or product that is not mine, I am only pointing at what is already public.
+    validations:
+      required: true
