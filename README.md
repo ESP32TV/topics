@@ -22,6 +22,26 @@ Topics are reviewed by the ESP32TV team. To be accepted, a suggestion should:
 - **Not be a duplicate** — search before submitting; duplicates are closed pointing at the original.
 - **Be respectful and spam-free** — promotional or abusive submissions are closed immediately.
 
+### The stack layer, and how it relates to tags
+
+The form asks where your topic sits in the stack. That answer is how a topic is routed and counted, not how it is
+filed: the library index uses its own subject tags, assigned by the team at triage, and one topic can carry several
+of them. Pick the layer that fits best — a topic that spans two is not a problem.
+
+| Layer you pick | Tags it usually leads to |
+|---|---|
+| Toolchain and build | `#Toolchain` |
+| Protocols and networking | `#Connectivity` |
+| AI and edge inference | none yet — tagged by hand at triage |
+| Peripherals and drivers | `#Hardware` |
+| Low power and reliability | `#LowPower`, and `#Storage` when partitions or NVS are involved |
+| Ecosystem and tooling around ESP32 | none yet — tagged by hand at triage |
+| Other | triage's call |
+
+Five of the ten subject tags (`#Configuration`, `#Debugging`, `#Diagnostics`, `#Runtime`, `#VibeCoding`) have no layer
+of their own, so a topic about them arrives under `Other` or under the nearest layer and is tagged at triage. The
+layer you choose is never wrong for that reason.
+
 ## What happens to your issue
 
 | Label | Meaning |
