@@ -9,7 +9,7 @@ body:
         "ESP32-C6 Matter commissioning, end to end" clears the bar, "networking stuff" does not.
 
         Accepted topics become episodes, so describing what you need to see makes the episode answer
-        your actual question. Full policy: [README](../blob/main/README.md#topic-policy).
+        your actual question. Full policy: [README](https://github.com/ESP32TV/topics/blob/main/README.md#topic-policy).
 
   - type: textarea
     id: coverage
@@ -56,14 +56,15 @@ body:
     validations:
       required: false
 
-  - type: dropdown
+  - type: checkboxes
     id: confirmations
     attributes:
       label: Before you submit
-      description: Not a duplicate · about ESP32 development · listed references resolve · no promotional or support traffic.
+      description: All four must hold. Reviewers check them at triage, and a "no" at triage is what gets a topic declined.
       options:
-        - Yes — all of these hold
-        - No — one does not, see the description above
-      default: 0
+        - label: I searched open and closed issues — this topic is not already requested.
+        - label: This is about ESP32 development, not general electronics, and not a request for direct support.
+        - label: Every link in References resolves, and none of them contradicts the topic.
+        - label: This is not promotional and carries no vendor marketing.
     validations:
       required: true
