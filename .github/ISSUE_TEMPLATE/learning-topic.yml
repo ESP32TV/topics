@@ -12,7 +12,7 @@ body:
         your actual question. Full policy: [README](https://github.com/ESP32TV/topics/blob/main/README.md#topic-policy).
 
         This form is for the **Learning** series only. For Insider, Tech Review, Project Review,
-        ESP32 Youth, Monthly News or Breaking News, use the other form.
+        ESP32 Youth or News, use the other form.
 
   - type: textarea
     id: coverage

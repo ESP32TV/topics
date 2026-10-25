@@ -23,8 +23,7 @@ body:
         - Tech Review (partner technologies and integrations)
         - Project Review (community and commercial projects)
         - ESP32 Youth (student and university projects)
-        - Monthly News (ecosystem roundup)
-        - Breaking News (ecosystem updates as they happen)
+        - News (ecosystem roundup and updates as they happen)
         - Other
     validations:
       required: true
