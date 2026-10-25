@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Topic policy
+    url: https://github.com/ESP32TV/topics#topic-policy
+    about: What a topic must satisfy before it is accepted. Read this first if the form asks you something unexpected.
