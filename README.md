@@ -8,7 +8,7 @@ The public topic backlog of ESP32TV, the only ESP32-only media platform. Every i
 2. **Open a topic suggestion** — blank issues are disabled, so every issue starts from the form. The title is your topic; the form asks for:
    - **The topic as the title** — one specific line, e.g. "ESP32 Bluetooth Mesh in practice", not "networking stuff"
    - **What the episode should cover** (required) — two to six concrete points. If the topic is accepted, this becomes the episode outline
-   - **Where it sits in the stack** (required) — toolchain, protocols, AI and edge inference, peripherals, low power, ecosystem, or other
+   - **Where it sits in the stack** (required) — pick the one layer that fits best: toolchain and build, protocols and networking, firmware architecture and RTOS, debugging and diagnosis, configuration and storage, peripherals and drivers, low power and OTA, AI-assisted development, AI and edge inference, security, ecosystem and tooling, or other
    - **Why it matters** (optional) — who runs into the problem, and what existing material is missing or misleading
    - **References** (optional) — links to docs, repos, or articles that support the topic. They are checked
 
@@ -32,15 +32,21 @@ of them. Pick the layer that fits best — a topic that spans two is not a probl
 |---|---|
 | Toolchain and build | `#Toolchain` |
 | Protocols and networking | `#Connectivity` |
-| AI and edge inference | none yet — tagged by hand at triage |
+| Firmware architecture and RTOS | `#Runtime` |
+| Debugging and diagnosis | `#Debugging`, `#Diagnostics` |
+| Configuration, storage and boot | `#Configuration`, `#Storage` |
 | Peripherals and drivers | `#Hardware` |
-| Low power and reliability | `#LowPower`, and `#Storage` when partitions or NVS are involved |
+| Low power, OTA and reliability | `#LowPower` |
+| AI-assisted development | `#VibeCoding` |
+| AI and edge inference | none yet — tagged by hand at triage |
+| Security | none yet — tagged by hand at triage |
 | Ecosystem and tooling around ESP32 | none yet — tagged by hand at triage |
 | Other | triage's call |
 
-Five of the ten subject tags (`#Configuration`, `#Debugging`, `#Diagnostics`, `#Runtime`, `#VibeCoding`) have no layer
-of their own, so a topic about them arrives under `Other` or under the nearest layer and is tagged at triage. The
-layer you choose is never wrong for that reason.
+Every one of the ten subject tags is reached from a layer, so a topic no longer has to arrive as `Other` to end up
+under the right tag. Three layers lead to no tag yet — AI on the device, security, and the ecosystem around ESP32 —
+and those are tagged by hand at triage; security has no tag in the vocabulary at all, which is a decision for the tag
+list rather than for this page. Pick the layer that fits best: a topic that spans two is not a problem.
 
 ## What happens to your issue
 

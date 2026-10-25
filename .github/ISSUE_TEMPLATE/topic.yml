@@ -35,11 +35,16 @@ body:
     attributes:
       label: Where does it sit in the stack?
       options:
-        - Toolchain and build (ESP-IDF, PlatformIO, flashing, CI)
+        - Toolchain and build (ESP-IDF, Arduino, PlatformIO, flashing, CI)
         - Protocols and networking (Wi-Fi, BLE, Thread, Matter, MQTT, ESP-NOW)
-        - AI and edge inference (TFLite, LLMs, vision, voice)
+        - Firmware architecture and RTOS (tasks, scheduling, memory, performance)
+        - Debugging and diagnosis (logs, backtraces, JTAG, core dumps)
+        - Configuration, storage and boot (sdkconfig, partitions, NVS, filesystems, startup)
         - Peripherals and drivers (I2C, SPI, USB, ADC, sensors)
-        - Low power and reliability (sleep, OTA, provisioning, watchdog)
+        - Low power, OTA and reliability (sleep, watchdog, updates, provisioning)
+        - AI-assisted development (agent workflow, prompting, reviewing generated code)
+        - AI and edge inference (TFLite, LLMs, vision, voice)
+        - Security (secure boot, flash encryption, TLS, credentials)
         - Ecosystem and tooling around ESP32 (clients, dashboards, integrations)
         - Other
     validations:
