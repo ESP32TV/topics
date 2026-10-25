@@ -13,10 +13,9 @@ The public topic backlog of ESP32TV, the only ESP32-only media platform. Every i
    - **Why it matters** (optional) — who runs into the problem, and what existing material is missing or misleading
    - **References** (optional) — links to docs, repos, or articles that support the topic. They are checked
 
-   **Other shows — topic suggestion.** For Insider, Tech Review, Project Review, ESP32 Youth, Expert View, Monthly News, Breaking News, Book Review, Hardware or the Job market. Asks for:
+   **Other shows — topic suggestion.** For Insider, Tech Review, Project Review, ESP32 Youth, Monthly News or Breaking News. Asks for:
    - **Which show** (required) — the team confirms or changes it at triage
-   - **What it is about** (required) — the project and its repository, the partner and product, the author and book, the chip or feature, the event or release, with a link where one exists
-   - **What the episode should cover** (required) — two to six concrete points
+   - **What it is about** (required) — the project and its repository, the partner and product, the chip or feature, the event or release, with a link where one exists, then the two to six concrete points the episode should cover
    - **Why now** (optional) — a release, a change, a gap, or for a news item what happened and when
    - **References** (optional) — checked
 
